@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data da Aplicacao"
+        android:textSize="30dip"
+        android:id="@+id/textView25"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="data"
+        android:id="@+id/textView27"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:textSize="30dip"
+        android:id="@+id/textView30"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView42"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="quantidade"
+        android:id="@+id/textView31"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView30"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local da colheita"
+        android:textSize="30dip"
+        android:id="@+id/textView32"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView31"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="local"
+        android:id="@+id/textView33"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btDestinoProdutosVisualizarCancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btDestinoProdutosVisualizarVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btDestinoProdutosVisualizarCancelar"
+        android:layout_toStartOf="@+id/btDestinoProdutosVisualizarCancelar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btDestinoProdutosVisualizarSalvar"
+        android:layout_alignTop="@+id/btDestinoProdutosVisualizarCancelar"
+        android:layout_toRightOf="@+id/btDestinoProdutosVisualizarCancelar"
+        android:layout_toEndOf="@+id/btDestinoProdutosVisualizarCancelar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destino do produto"
+        android:textSize="30dip"
+        android:id="@+id/textView37"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView33"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="destino"
+        android:id="@+id/textView38"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView37"
+        android:layout_alignRight="@+id/textView41"
+        android:layout_alignEnd="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cultura"
+        android:textSize="30dip"
+        android:id="@+id/textView41"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cultura"
+        android:id="@+id/textView42"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView41"
+        android:layout_alignRight="@+id/textView38"
+        android:layout_alignEnd="@+id/textView38" />
+</RelativeLayout>

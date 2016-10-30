@@ -1,0 +1,61 @@
+package br.com.org.entidade.craof;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Plantio implements Serializable{
+    private Integer id_plantio;
+    private String data;
+    private String quantidade;
+    private Integer id_usuario;
+    private LocalPlantio localPlantio = new LocalPlantio();
+    private Cultura cultura = new Cultura();
+
+    public Integer getId_plantio() {
+        return id_plantio;
+    }
+
+    public void setId_plantio(Integer id_plantio) {
+        this.id_plantio = id_plantio;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(String quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public Integer getId_usuario() {
+        return id_usuario;
+    }
+
+    public void setId_usuario(Integer id_usuario) {
+        this.id_usuario = id_usuario;
+    }
+
+    public LocalPlantio getLocalPlantio() {
+        return localPlantio;
+    }
+
+    public void setLocalPlantio(LocalPlantio localPlantio) {
+        this.localPlantio = localPlantio;
+    }
+
+    public Cultura getCultura() {
+        return cultura;
+    }
+
+    public void setCultura(Cultura cultura) {
+        this.cultura = cultura;
+    }
+}

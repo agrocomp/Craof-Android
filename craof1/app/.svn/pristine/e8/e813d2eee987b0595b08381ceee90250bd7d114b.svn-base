@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Local"
+        android:textSize="30dip"
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="local"
+        android:id="@+id/etLocal"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btVoltar"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btSalvar"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/btVoltar"
+        android:layout_toRightOf="@+id/btVoltar"
+        android:layout_toEndOf="@+id/btVoltar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btVoltar"
+        android:layout_toStartOf="@+id/btVoltar" />
+</RelativeLayout>

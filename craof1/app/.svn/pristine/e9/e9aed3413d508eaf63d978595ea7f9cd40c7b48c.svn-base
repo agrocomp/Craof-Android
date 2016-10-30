@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição da Cultura"
+        android:textSize="30dip"
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cultura"
+        android:id="@+id/etCultura"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:id="@+id/btSalvar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/etCultura"
+        android:layout_toEndOf="@+id/etCultura" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancelar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etCultura"
+        android:layout_alignEnd="@+id/etCultura" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btVoltar"
+        android:layout_toStartOf="@+id/btVoltar" />
+
+</RelativeLayout>

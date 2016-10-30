@@ -1,0 +1,52 @@
+package br.com.org.entidade.DAO.craof;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import br.com.org.entidade.Usuario;
+import br.com.org.entidade.craof.LocalDestino;
+
+
+public class DestinoDAO {
+
+    public boolean salvar(LocalDestino localDestino) throws SQLException {
+        String sql = "INSERT INTO local_destino (descricao, id_usuario) VALUES (?,?)";
+
+        return false;
+    }
+
+    public LocalDestino buscarId(LocalDestino localDestino, Usuario usuario) throws SQLException {
+        int max = 0;
+        String sql = "SELECT * from local_destino WHERE descricao = ? AND id_usuario = ?";
+
+        return localDestino;
+    }
+
+    public ArrayList<LocalDestino> procurar(LocalDestino localDestino, Usuario usuario) throws SQLException {
+        ArrayList<LocalDestino> listaLocalDestino = new ArrayList();
+        String sql = "SELECT * FROM local_destino WHERE upper(descricao) LIKE '" + localDestino.getDescricao() + "%' AND id_usuario = " + usuario.getId();
+
+        return listaLocalDestino;
+    }
+
+    public ArrayList<LocalDestino> buscarTodos(Usuario usuario) throws SQLException {
+        ArrayList<LocalDestino> listaLocalDestino = new ArrayList();
+        String sql = "SELECT * FROM local_destino WHERE id_usuario = " + usuario.getId();
+
+        return listaLocalDestino;
+    }
+
+    public boolean alterar(LocalDestino localDestino, String nomeNovo) throws SQLException {
+        String sql = "UPDATE local_destino SET descricao = '" + nomeNovo + "' WHERE id_local_destino = " + localDestino.getId_localDestino();
+
+        return false;
+    }
+
+    public boolean excluir(String id_localDestino) throws SQLException {
+        String sql = "DELETE FROM local_destino WHERE id_local_destino = " + id_localDestino;
+
+        return false;
+    }
+}

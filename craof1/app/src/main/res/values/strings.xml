@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">craof1</string>
+    <string name="title_activity_cultura_cadastrar1">CulturaCadastrar1</string>
+    <string name="title_activity_teste">teste</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

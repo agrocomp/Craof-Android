@@ -1,0 +1,37 @@
+package br.com.org.controle.craof;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import br.com.org.entidade.DAO.craof.LocalPlantioDAO;
+import br.com.org.entidade.Usuario;
+import br.com.org.entidade.craof.LocalPlantio;
+
+
+public class Controle_CRUD_Local {
+
+    public Integer cadastrar(LocalPlantio localPlantio, Usuario usuario) throws SQLException {
+      return 0;
+    }
+
+    public LocalPlantio buscarId(LocalPlantio localPlantio, Usuario usuario) throws SQLException {
+        LocalPlantioDAO localPlantioDAO = new LocalPlantioDAO();
+        return localPlantioDAO.buscarId(localPlantio, usuario);
+    }
+
+    public ArrayList<String> buscarTodos() throws SQLException {
+        LocalPlantioDAO localPlantioDAO = new LocalPlantioDAO();
+        return localPlantioDAO.buscarTodos(null);
+    }
+
+    public boolean alterar(LocalPlantio localPlantio, String nomeNovo) throws SQLException {
+        LocalPlantioDAO localPlantioDAO = new LocalPlantioDAO();
+        return localPlantioDAO.alterar(localPlantio, nomeNovo);
+    }
+
+    public boolean excluir(String id_cultura) throws SQLException {
+        LocalPlantioDAO localPlantioDAO = new LocalPlantioDAO();
+        return localPlantioDAO.excluir(id_cultura);
+    }
+
+}

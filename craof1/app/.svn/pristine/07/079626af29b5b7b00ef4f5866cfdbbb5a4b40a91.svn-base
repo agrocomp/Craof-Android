@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data da Aplicacao"
+        android:textSize="30dip"
+        android:id="@+id/textView25"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="data"
+        android:id="@+id/textView27"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cultura"
+        android:textSize="30dip"
+        android:id="@+id/textView28"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView31"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cultura"
+        android:id="@+id/textView29"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView28"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:textSize="30dip"
+        android:id="@+id/textView30"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="quantidade"
+        android:id="@+id/textView31"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView30"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalidade da Aplicacao"
+        android:textSize="30dip"
+        android:id="@+id/textView32"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView29"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="local"
+        android:id="@+id/textView33"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btVotlar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btVoltar"
+        android:layout_toStartOf="@+id/btVoltar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btSalvar"
+        android:layout_alignTop="@+id/btVoltar"
+        android:layout_toRightOf="@+id/btVoltar"
+        android:layout_toEndOf="@+id/btVoltar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insumo Aplicado"
+        android:textSize="30dip"
+        android:id="@+id/textView37"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="insumo"
+        android:id="@+id/textView38"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView37"
+        android:layout_alignRight="@+id/textView29"
+        android:layout_alignEnd="@+id/textView29" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+package br.com.screen.craof.cultura;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import br.com.croaf.croaf.R;
+
+
+/**
+ * Created by Luan on 28/10/2016.
+ */
+public class CulturaActivity extends Activity {
+    Button btNovaCultura;
+    Button btCancelarSalvar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cultura_principal);
+        construtorBotoes();
+    }
+
+    public void construtorBotoes(){
+        btNovaCultura = (Button) findViewById(R.id.btNovaCultura);
+        btCancelarSalvar = (Button) findViewById(R.id.btCancelarSalvar);
+
+
+        btNovaCultura.setOnClickListener(novaCultura());
+        btCancelarSalvar.setOnClickListener(cancelar());
+    }
+
+    public View.OnClickListener novaCultura(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_cultura_salvar_nomeCultura);
+            }
+        };
+    }
+
+    public View.OnClickListener cancelar(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_cultura_principal);
+            }
+        };
+    }
+
+    public View.OnClickListener salvar(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_cultura_principal);
+            }
+        };
+    }
+}

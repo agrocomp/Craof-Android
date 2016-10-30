@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição da Cultura"
+        android:textSize="30dip"
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cultura"
+        android:id="@+id/etCultura"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:id="@+id/btCulturaVisulizarSalvar"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btCulturaVisualizarCancelar"
+        android:layout_toEndOf="@+id/btCulturaVisualizarCancelar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btCulturaVisualizarCancelar"
+        android:layout_alignTop="@+id/btCulturaVisulizarSalvar"
+        android:layout_toRightOf="@+id/btCulturaVisualizarVoltar"
+        android:layout_toEndOf="@+id/btCulturaVisualizarVoltar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btCulturaVisualizarVoltar"
+        android:layout_alignTop="@+id/btCulturaVisualizarCancelar"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+</RelativeLayout>

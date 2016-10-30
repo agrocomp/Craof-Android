@@ -1,0 +1,36 @@
+package br.com.org.controle.craof;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import br.com.org.entidade.DAO.craof.DestinoDAO;
+import br.com.org.entidade.Usuario;
+import br.com.org.entidade.craof.LocalDestino;
+
+
+public class Controle_CRUD_Destino {
+
+    public Integer cadastrar(LocalDestino localDestino, Usuario usuario) throws SQLException {
+        return 0;
+    }
+
+    public LocalDestino buscarId(LocalDestino localDestino, Usuario usuario) throws SQLException {
+        DestinoDAO localDestinoDAO = new DestinoDAO();
+        return localDestinoDAO.buscarId(localDestino, usuario);
+    }
+
+    public ArrayList<String> buscarTodos(Usuario usuario) throws SQLException {
+        DestinoDAO localDestinoDAO = new DestinoDAO();
+        return localDestinoDAO.buscarTodos(usuario);
+    }
+
+    public boolean alterar(LocalDestino localDestino, String nomeNovo) throws SQLException {
+        DestinoDAO localDestinoDAO = new DestinoDAO();
+        return localDestinoDAO.alterar(localDestino, nomeNovo);
+    }
+
+    public boolean excluir(String id_localDestino) throws SQLException {
+        DestinoDAO localDestinoDAO = new DestinoDAO();
+        return localDestinoDAO.excluir(id_localDestino);
+    }
+}

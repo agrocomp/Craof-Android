@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".screen.craof.MainActivity"
+            android:label="CRAOF"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activitys relacionada ao cadastro de cultura -->
+        <activity android:name=".screen.craof.cultura.CulturaDescricao" />
+        <activity android:name=".screen.craof.cultura.CulturaPrincipal" />
+        <activity android:name=".screen.craof.cultura.CulturaVisualizar" />
+        <!-- Activitys relacionada ao cadastro de local -->
+        <activity android:name=".screen.craof.local.LocalDescricao" />
+        <activity android:name=".screen.craof.local.LocalPrincipal" />
+        <activity android:name=".screen.craof.local.LocalVisualizar" />
+        <!-- Activitys relacionada ao cadastro de destino -->
+        <activity android:name=".screen.craof.destino.DestinoDescricao" />
+        <activity android:name=".screen.craof.destino.DestinoPrincipal" />
+        <activity android:name=".screen.craof.destino.DestinoVisualizar" />
+        <!-- Activitys relacionada ao cadastro de insumos -->
+        <activity android:name=".screen.craof.insumos.InsumosDescricao" />
+        <activity android:name=".screen.craof.insumos.InsumosIngredientes" />
+        <activity android:name=".screen.craof.insumos.InsumosPrincipal" />
+        <activity android:name=".screen.craof.insumos.InsumosVisualizar" />
+        <!-- Activitys relacionada as Fichas -->
+        <!-- Activitys relacionada a aplicacao de insumos -->
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoCultura" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoData" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoFinalidade" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoInsumo" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoPrincipal" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoQuantidade" />
+        <activity android:name=".screen.craof.aplicacaoInsumo.AplicacaoInsumoVisualizar" />
+        <!-- Activitys relacionada a compra de insumos -->
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoData" />
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoFinalidade" />
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoInsumo" />
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoPrincipal" />
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoQuantidade" />
+        <activity android:name=".screen.craof.compraInsumos.CompraInsumoVisualizar" />
+        <!-- Activitys relacionada ao controle de plantio -->
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioCultura" />
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioData" />
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioLocal" />
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioPrincipal" />
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioQuantidade" />
+        <activity android:name=".screen.craof.controlePlantio.ControlePlantioVisualizar" />
+        <!-- Activitys relacionada ao destino dos produtos -->
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoCultura" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoData" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoDestino" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoLocal" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoPrincipal" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoQuantidade" />
+        <activity android:name=".screen.craof.destinoproduto.DestinoProdutoVisualizar" />
+        <!-- Activitys relacionada a producao dos insumos -->
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosData" />
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosInsumo" />
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosProdutos" />
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosPrincipal" />
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosQuantidade" />
+        <activity android:name=".screen.craof.produzirInsumos.ProduzirInsumosVisualizar" />
+
+    </application>
+
+</manifest>

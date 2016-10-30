@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insumo"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Insumo:"
+        android:id="@+id/textViewIns2"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textViewIns"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/descricaoInsumo"
+        android:layout_gravity="top"
+        android:layout_below="@+id/textViewIns2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:id="@+id/btProximo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/check1"
+        android:layout_alignStart="@+id/check1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btProximo"
+        android:layout_toStartOf="@+id/btProximo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produzido no Local: "
+        android:textStyle="bold"
+        android:id="@+id/textViewIns3"
+        android:layout_marginTop="58dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/descricaoInsumo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sim"
+        android:id="@+id/check1"
+        android:checked="false"
+        android:layout_alignTop="@+id/textViewIns3"
+        android:layout_toRightOf="@+id/textViewIns3"
+        android:layout_toEndOf="@+id/textViewIns3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:clickable="true"
+        android:layout_alignTop="@+id/textViewIns3"
+        android:layout_toRightOf="@+id/textViewIns2"
+        android:layout_toEndOf="@+id/textViewIns2" />
+
+</RelativeLayout>

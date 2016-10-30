@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data da Producao"
+        android:textSize="30dip"
+        android:id="@+id/textView25"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="data"
+        android:id="@+id/textView27"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:textSize="30dip"
+        android:id="@+id/textView30"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="quantidade"
+        android:id="@+id/textView31"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView30"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btProduzirInsumoVisualizarCancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btProduzirInsumoVisualizarVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btProduzirInsumoVisualizarCancelar"
+        android:layout_toStartOf="@+id/btProduzirInsumoVisualizarCancelar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btProduzirInsumoVisualizarSalvar"
+        android:layout_alignTop="@+id/btProduzirInsumoVisualizarCancelar"
+        android:layout_toRightOf="@+id/btProduzirInsumoVisualizarCancelar"
+        android:layout_toEndOf="@+id/btProduzirInsumoVisualizarCancelar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insumo Produzido"
+        android:textSize="30dip"
+        android:id="@+id/textView37"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="insumo"
+        android:id="@+id/textView38"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView37"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

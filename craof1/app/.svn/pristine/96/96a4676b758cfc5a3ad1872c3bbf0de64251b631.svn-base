@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewCult3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Cadastro Cultura"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Cultura:"
+        android:id="@+id/textViewCult4"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textViewCult3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/descricaoCultura"
+        android:layout_gravity="top"
+        android:layout_below="@+id/textViewCult4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:id="@+id/btProximo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textViewCult3"
+        android:layout_alignEnd="@+id/textViewCult3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btProximo"
+        android:layout_toStartOf="@+id/btProximo" />
+</RelativeLayout>
