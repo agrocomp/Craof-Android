@@ -1,0 +1,5 @@
+package org.controle.usuario;
+
+public class Controle_CRUD_Usuario {
+
+}

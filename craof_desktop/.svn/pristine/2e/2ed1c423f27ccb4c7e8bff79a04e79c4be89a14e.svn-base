@@ -1,0 +1,81 @@
+package org.entidade.DAO.craof;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import org.entidade.craof.Insumo;
+import org.entidade.craof.ProducaoInsumo;
+import util.Conexao;
+
+public class ProducaoInsumoDAO {
+
+    public static boolean salvar(ProducaoInsumo producao) throws SQLException {
+        String sql = "INSERT INTO producao_insumo (data, quantidade, id_insumo, id_usuario) VALUES (?,?,?,?)";
+        PreparedStatement ps = Conexao.getConnection().prepareStatement(sql);
+        ps.setObject(1, producao.getData());
+        ps.setObject(2, producao.getQuantidade());
+        ps.setObject(3, producao.getInsumo().getId_insumo());
+        ps.setObject(4, producao.getId_usuario());
+        boolean cadastrou = ps.execute();
+        Conexao.setConnection();
+        return cadastrou;
+    }
+
+    public static ArrayList<ProducaoInsumo> obterRelatorio(String dataInicial, String dataFinal) throws ParseException, SQLException {
+        ArrayList<ProducaoInsumo> listaProducaoInsumo = new ArrayList();
+        DateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+        Date di = df.parse(dataInicial);
+        Date da = df.parse(dataFinal);
+        df = new SimpleDateFormat("dd/mm/yyyy");
+        dataInicial = df.format(di);
+        dataFinal = df.format(da);
+        String sql = "SELECT pi.id_producao_insumo, pi.data, i.descricao, pi.quantidade, pi.id_insumo FROM producao_insumo pi, insumo i\n"
+                + "WHERE pi.id_insumo = i.id_insumo AND CAST (pi.data as date) between '" + dataInicial + "' AND '" + dataFinal + "'";
+        PreparedStatement ps = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            ProducaoInsumo aux = new ProducaoInsumo();
+            aux.setId_producaoInsumo(rs.getInt(1));
+            aux.setData(rs.getString(2));
+            aux.getInsumo().setDescricao(rs.getString(3));
+            aux.setQuantidade(rs.getInt(4));
+            aux.getInsumo().setListaInsumo(buscarItensInsumo(rs.getInt(5)));
+            listaProducaoInsumo.add(aux);
+        }
+        Conexao.setConnection();
+        return listaProducaoInsumo;
+    }
+    
+    public static ArrayList<Insumo> buscarItensInsumo(int id) throws SQLException{
+        ArrayList<Insumo> listaInsumo = new ArrayList();
+        String sql = "SELECT ing.id_ingrediente, ins.descricao FROM ingrediente ing, insumo ins WHERE ing.id_ingrediente = ins.id_insumo AND ing.id_insumo = " + id;
+        PreparedStatement ps = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            Insumo aux = new Insumo();
+            aux.setId_insumo(rs.getInt("id_ingrediente"));
+            aux.setDescricao(rs.getString("descricao"));
+            listaInsumo.add(aux);
+        }
+        System.out.println("size: " + listaInsumo.size());
+        Conexao.setConnection();
+        return listaInsumo;
+    }
+    
+    public static int maximoId() throws SQLException {
+        int max = 0;
+        String sql = "SELECT max(id_producao_insumo) FROM producao_insumo";
+        PreparedStatement ps = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            max = rs.getInt(1) + 1;
+        }
+        Conexao.setConnection();
+        return max;
+    }
+}

@@ -1,0 +1,9 @@
+package org.entidade.DAO.usuario;
+
+import java.sql.SQLException;
+import java.util.List;
+import org.entidade.usuario.Usuario;
+
+public class UsuarioDAO {
+
+}
